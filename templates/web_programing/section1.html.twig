@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Java Script{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('section1') }}
+{% endblock %}
+
+{% block body %}
+    <h2> JavaScript Programs</h2>
+    <div>
+        <label for="nb"></label><input type="number" placeholder="int tableau" id="nb">
+        <button onclick="add()">Add</button>
+        <span id="tab">blabla</span>
+    </div>
+
+
+    <div>
+        <p class="name">Remove the smallest </p>
+        <button onclick="appSmall()">Clik me</button>
+    </div>
+    <div id="resultSmall"></div>
+
+    <div>
+        <p class="name">Calcul PI </p>
+        <button onclick="appPi()">Clik me</button>
+    </div>
+    <div id="resultPi"></div>
+{% endblock %}
