@@ -3,7 +3,24 @@
 
 {% block body %}
     <h2>All users register :</h2>
-    {% for user in users %}
-        <p>{{ user.getEmail() }}</p>
-    {% endfor %}
+    <table>
+        <thead>
+        <tr>
+            <th>Email<br></th>
+            <th>Password Hash<br></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {% for user in users %}
+        <tr>
+                <td>{{ user.getEmail()}}</td>
+                <td>{{ user.getPassword()}}</td>
+        </tr>
+            {% endfor %}
+
+
+        </tbody>
+    </table>
+
 {% endblock %}

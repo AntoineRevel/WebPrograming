@@ -6,7 +6,7 @@ const tab = [1, 4, 5, 7, 2, 9];
 
 function appSmall() {
     let resultText=document.getElementById("resultSmall");
-    let node=document.createTextNode(JSON.stringify(removeNsmallest(3, tab)));
+    let node=document.createTextNode(JSON.stringify(removeNsmallest(1, tab)));
     //console.log(removeNsmallest(3, tab))
     resultText.appendChild(node);
 }
